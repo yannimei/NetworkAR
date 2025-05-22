@@ -19938,6 +19938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593a2fe42fa9d37498c96f9a383b6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NetworkManagerExpanded: 0
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 980157990}
@@ -19960,6 +19961,10 @@ MonoBehaviour:
     LoadSceneTimeOut: 120
     SpawnTimeout: 10
     EnableNetworkLogs: 1
+    NetworkTopology: 0
+    UseCMBService: 0
+    AutoSpawnPlayerPrefabClientSide: 1
+    NetworkProfilingMetrics: 1
     OldPrefabList: []
   RunInBackground: 1
   LogLevel: 1
@@ -22668,6 +22673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9334420786731409b2bf965732d6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   playerNameTagPrefab: {fileID: 6612306959276078633, guid: e6e1b232a4f038c4684c307eb3088311, type: 3}
 --- !u!114 &1096580852
 MonoBehaviour:
@@ -22705,6 +22711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 1239226641
   InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 0
   ActiveSceneSynchronization: 0
@@ -22712,6 +22720,8 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!114 &1096580854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24023,6 +24033,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 2357613404
   InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -24030,6 +24042,8 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!114 &1165408913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24153,7 +24167,7 @@ Transform:
   m_GameObject: {fileID: 1165408911}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.894, y: 0, z: 0}
+  m_LocalPosition: {x: 0.669, y: 0.326, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -24172,6 +24186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c591ff029c5744fab32050a9c97f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!114 &1165408920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24184,6 +24199,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405ed07ae7c26a141bac0d303d0a347a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 0
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
+  AuthorityMode: 0
+  TickSyncChildren: 0
   UseUnreliableDeltas: 0
   SyncPositionX: 1
   SyncPositionY: 1
@@ -24201,6 +24230,7 @@ MonoBehaviour:
   UseQuaternionCompression: 0
   UseHalfFloatPrecision: 0
   InLocalSpace: 0
+  SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
 --- !u!114 &1165408921
@@ -32003,6 +32033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c591ff029c5744fab32050a9c97f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!114 &1542453492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32015,6 +32046,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405ed07ae7c26a141bac0d303d0a347a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 0
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
+  AuthorityMode: 0
+  TickSyncChildren: 0
   UseUnreliableDeltas: 0
   SyncPositionX: 1
   SyncPositionY: 1
@@ -32032,6 +32077,7 @@ MonoBehaviour:
   UseQuaternionCompression: 0
   UseHalfFloatPrecision: 0
   InLocalSpace: 0
+  SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
 --- !u!114 &1542453493
@@ -32048,6 +32094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 2041256970
   InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -32055,6 +32103,8 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!114 &1542453494
 MonoBehaviour:
   m_ObjectHideFlags: 0
